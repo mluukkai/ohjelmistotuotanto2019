@@ -47,17 +47,35 @@ Miniprojektiin osallistuminen ei ole välttämätöntä, jos täytät tyo
 
 Kriteerit selviävät [täältä](https://www.helsinki.fi/fi/ohjelmat/kandi/tietojenkasittelytieteen-kandiohjelma/ohjeita-ja-infoa-ohjelman-opiskelijoille#section-41418) kohdasta _Laaja suoritus: Ohjelmistotuotantoprojekti_
 
-Jos hyväksiluet miniprojektin työkokemuksella, kerro asiasta välittömästi emailitse
+Jos hyväksiluet miniprojektin työkokemuksella, kerro asiasta välittömästi emailitse.
 
 ## Kurssin arvostelu
 
-laskarit
+Kurssilta on jaossa yhteensä 40 pistettä, jotka jakautuvat eri komponenttien kesken seuraavasti
 
-koe
+- laskarit 10 pistettä
+  - luentoihin liittyvät monivalintatehtävät 2 pistettä 
+  - viikoittaiset ohjelmointi/versionhallinta/konfigurointitehtävät 8 pistettä
+- miniprojekti 8 pistettä
+- koe 22 pistettä
 
-miniproj
+Arvosanaan 1 riittää 20 pistettä, arvosanaan 5 tarvitaan 36 pistettä. 
+
+Läpipääsy edellyttää lisäksi miniprojektin hyväksyttyä suoritusta (tai hyväksilukua) ja vähintään puolta kokeen pisteistä.
 
 ## Luennot - laskuharjoitukset - miniprojekti
+
+Kurssi siis sisältää kolme pääkomponenttia, luennot, viikoittaiset laskuharjoituset sekä miniprojektin. Komponentit ovat luonteeltaan melko erilaisia, ja se on joskus aiheuttanut hämmennystä opiskelijoiden keskuudessa.
+
+Kurssin luennoilla keskitytään pääosin ohjelmistokehityksen teoriaan ja käsitteistöön. 
+
+Laskareista monivalintatehtävät liittyvät kunkin viikon luentoihin. Versionhallintaa, ohjelmistojen konfigurointia, testausta ja ohjelmointia käsittelevien teknisempien tehtävien aihepiirejä ei taas luennoilla käsitellä oikeastaan ollenkaan (poislukien testaukseen liittyvä teoria). 
+
+Miniprojektin ideana taas on yhdistää luentojen teoria ja laskareissa käsitellyt teknisemmät asiat, ja soveltaa niitä käytännössä pienessä ohjelmistoprojektissa.
+
+Kokeessa suurin paino tulee olemaan teoriassa ja sen soveltamisessa käytäntöön. Laskareiden teknisimpiä asioita, kuten versionhallintaa ei kokeessa tulla kysymään. Tarkemmin kokeesta ja siihen valmistautumisesta kurssin viimeisellä luennolla.
+
+Kuten kohta tulemme näkemään, ohjelmistotuotanto kattaa suuren kirjon erilaisia asioita alkaen ihmisten johtamisesta aina teknisimpiin komentoriviltä suoritettaviin operaatioihin asti. Sama heijastuu myös kurssin rakenteessa, kurssilla on eri henkisiä komponentteja, näistä mikään ei ole muita tärkeämpi, kullakin on oma painoarvonsa kurssin arvostelussa. Teoria-asioita arvioidaan koemenestyksen perusteella, käytännöllisimpiä asioita taas "jatkuvana arviona" laskareista kertyvien pisteiden ja miniprojektissa suoriutumisen perusteella.
 
 # Ohjelmistotuotanto ja sen osa-alueet
 
