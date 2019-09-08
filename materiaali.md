@@ -175,13 +175,67 @@ Termi _software engineering_ eli ohjelmistotuotanto määritellään ensimma
      
 Syntyy idea siitä, että _code'n'fix_ -mentaliteetin sijaan ohjelmistojen kehittämisen tulisi olla kuin mikä tahansa muu insinöörityö, eli kuten esim. siltojen rakentamisessa, tulee ensin rakennettava artefakti määritellä (requirements) tarkasti ja suunnitella (design) aukottomasti ja tämän jälkeen rakentaminen (construction) on melko suoraviivainen vaihe.
 
-## Vesiputousmalli
+## Vesiputous- eli lineaarinen malli
 
-Winston Roycen vuonna 1970 julkaisema artikkeli [Management of the development of Large Software](http://www-scf.usc.edu/~csci201/lectures/Lecture11/royce1970.pdf) pohdiskelee isojen ohjelmistojen kehittämiseen liittyvää problematiikkaa. Artikkelin sivulla 2 Royce esittelee yksinkertaisen prosessimallin (eli ohjeiston työvaiheiden jaksottamiseen), jossa ohjelmiston elinkaaren vaiheet suoritetaan lineaarisesti peräkkäin
+Winston Roycen vuonna 1970 julkaisema artikkeli [Management of the development of Large Software](http://www-scf.usc.edu/~csci201/lectures/Lecture11/royce1970.pdf) pohdiskelee isojen ohjelmistojen kehittämiseen liittyvää problematiikkaa. Artikkelin sivulla 2 Royce esittelee yksinkertaisen prosessimallin (eli ohjeiston työvaiheiden jaksottamiseen), jossa ohjelmiston elinkaaren vaiheet suoritetaan lineaarisesti peräkkäin:
 
-![](https://raw.githubusercontent.com/mluukkai/ohjelmistotuotanto2019/master/images/l-1.png)
+https://raw.githubusercontent.com/mluukkai/ohjelmistotekniikka-kevat2019/master/web/images/l-1.png
 
-## iterative
+Roycen versio kuvasta näyttää seuraavalta:
 
-## agile
+![](https://raw.githubusercontent.com/mluukkai/ohjelmistotuotanto2019/master/images/1-1.png?token=AAD7XYZV2IWJZ3IYM3C6AQC5PYLP2)
+
+Suoraviivainen lineaarinen malli, jota ruvettiin kutsumaan vesiputousmalliksi, saavutti nopeasti suosiota. Malli on monella tapaan järkeenkäypä, ensi kannattaa selvittää mitä ollaan tekemässä ja suunnittelu hoitaa vasta tämän jälkeen. Kun suunnitelma on valmis, voidaan tuote valmistaa ja sen jälkeen testata että se toimii kuiten haluttiin, näinhän toimitaan monella muullakin tuotannon alalla.
+
+Vesiputousmallin suosion taustalla oli osittain se, että Yhdysvaltain puolustusministerö (Department of Defence, DoD) joka oli tuohon aikaan eräs maailman suurimmista ohjelmistojen tilaajista, rupesi vaatimaan kaikilta alihankkijoiltaan prosessin noudattamista (Standardi DoD STD 2167). Muutkin ohjelmistoja tuottaneet tahot ajattelivat, että koska DoD vaatii vesiputousmallia, on se hyvä asia ja tapa kannattaa omaksua itselleen
+
+Vesiputousmalli perustuu vahvasti siihen, että eri vaiheet ovat erillisten tuotantotiimien tekemiä, joukko analyytikkoja miettii asiakkaan kanssa sovellukselle asetetut vaatimuksen, ohjelmistoarkkitehdit saavat vaatimusmääritelmän tuloksen ja suunnittelevat ohjelman sen perusteella. Ohjelmoijat toteuttavat sovelluksen arkkitehtien suunnitelman mukaan ja antavat sen testaajille laadunhallintaa varten. Tämä tuntuu luonnolliselta työnjaolta, kutakin erilaista vaihetta tekee kyseessäolevaan vaiheen työskentelymenetelmiin erikoistunut ihmisjoukko. 
+
+Jotta tieto ohjelmiston eri vaiheiden välillä, tulee kunkin vaiheen tulokset dokumentoida huolellisesti, erityisesti asiakkaan kanssa tehtävän vaatimusmäärittelyn on oltava huolellisesti tehty ja hyvin dokumentoitu, sillä kaikki myöhemmät vaiheet olettavat että vaatimukset on kattavasti ja virheettömästi kirjattu.
+
+Vesiputousmallin mukaisesta toiminnasta käytetään joskus luonnehdintaa _Big Design Up Front_ lyhenteenä BDUF, kuvaamaan sitä faktaa, että koko ohjelmisto määritellään ja suunnitellaan tyhjentävästi ennen ohjelmointivaiheen aloittamista. Termiä BDUF käytetään yleensä negatiivisessa merkityksessä kuvaamaan vesiputousmallin raskautta.
+
+Vesiputousmallin mukainen ohjelmistoprosessi on yleensä tarkkaan etukäteen suunniteltu, resursoitu ja aikataulutettu,
+tästä johtuu joskus siitä käytetty nimike _plan based process_, eli suunnitelmavetoinen prosessi.
+
+### Vesiputousmallin ongelmat
+
+Vesiputousmallin mukainen ohjelmistotuotanto siis ei ole osoittautunut erityisen onnistuneeksi. 
+
+Vesiputosusmalli siis olettaa että ohjelmistotuotannon vaiheet tapahtuvat peräkkäin ja jokainen vaihe ainakin isoissa projekteissa eri ihmisten toimesta. Tästä koituu useita ongelmia.
+
+Ongelmista keskeisin on se, että tehtiin vaatimusmäärittely miten huolellisesti tahansa, tulevat vaatimukset kuitenkin melkein varmasti muuttumaan matkan varrella. On osoittautunut, että asiakkaat eivät ohjelmistoja tilatessaan tiedä tai osaa sanoa mitä haluavat tai tarvitsevat. Asiakkaan tarpeet nimittäin saattavat muuttua projektin kuluessa. Kilpailutilanne saattaa vaihtua, tulee uusia lainsäädäntöjä, firmat fuusioituvat, mailman taloussuhtanteet vaihtuvat. Mitä pidempi ohjelmiston kehitysprosessi on, sitä varmampaa on, että vaatimukset elävät. 
+
+On myös kerta toisensa jälkeen nähty se, että asiakas alkaa haluta muutoksia heti kun näkee valmiin lopputuloksen. Koska ohjelmistot ovat abstrakteja tuotteita, on asiakkaiden hyvin vaikea pystyä etukäteen miettimään kaikkea toiminnallisuutta etukäteen sillä tasolla, että se voitaisiin lyödä täysin lukkoon kuten vesiputousmalli olettaa.
+
+Oma riskinsä on myös se, että suunnittelijat tai ohjelmoijat tulkitsevat dokumentoituja asiakkaan vaatimuksia väärällä tavalla, tai asiakas ei ole tullut ymmärretyksi täysin vaatimusten kirjaushetkellä, eli dokumentoidut vaatimukset ovat jo lähtökohtaisesti väärät. 
+
+Vesiputousmallin mukainen vaatimusmäärittelyn, suunnittelun ja toteutuksen erottaminen on käytännössä järjetöntä tai jopa mahdotonta. Valittu ohjelmiston arkkitehtuuri ja käytössä olevat toteutusteknologiat vaikuttavat suuresti määriteltyjen ominaisuuksien hintaan, määritellessä kannattaa siis miettiä myös suunnittelua ja toteutusta, missä muodossa asiakkaan vaatimukset on ylipäätään mahdollista toteuttaa järjevin resurssein. 
+
+Suunnittelun ja toteutuksen eriyttäminenkään ei ole osoittautunut toimivaksi ideaksi. Ohjelmistoja on mahdotonta suunnitella siten, että toteutus on suoraviivainen mekaaninen toimenpide, osa suunnittelusta tapahtuu pakosti vasta ohjelmointivaiheessa.
+
+Vesiputousmalliin perustuvan ohjelmistotuotannon takana on siis pitkälti analogia muihin insinööritieteisiin:
+rakennettava artefakti tulee ensin määritellä ja suunnitella (design) aukottomasti, tämän jälkeen rakentaminen (construction) on triviaali vaihe.
+
+> Perinteisesti ohjelmointi on rinnastettu triviaalina pidettyyn "rakentamisvaiheeseen" ja kaiken haasteen on ajateltu olevan määrittelyssä ja suunnittelussa. Tätä rinnastusta on kuitenkin ruvettu kritisoimaan, sillä ohjelmistojen suunnittelu sillä tarkkuudella, että suunnitelma voidaan muuttaa suoraviivaisesti koodiksi on osoittautunut mahdottomaksi.
+> 
+> Onkin [esitetty](http://www.bleading-edge.com/Publications/C++Journal/Cpjour2.htm) että perinteisen insinööritiedeanalogian triviaali rakennusvaihe ei ohjelmistoprosessissa olekaan ohjelmointi, vaan ohjelmakoodin kääntäminen eli että ohjelmakoodi on itseasiassa ohjelmiston lopullinen suunnitelma siinä mielessä kuin insinööritieteet käsittävät suunnittelun (design).
+
+Vesiputousmallin mukaisessa ohjelmistokehityksessä testaus suoritetaan kun ohjelmisto on valmiina. Vasta lopussa tapahtuva laadunhallinta paljastaa ongelmat kuitenkin aivan liian myöhään. Vikojen korjaaminen saattaa tulla hyvinkin kalliiksi, sillä testaus voi paljastaa ongelmia jotka pakottavat muuttamaan radikaalilla tavalla ohjelmiston rakennetta tai jopa sen vaatimuksia.
+
+Martin Fowlerin artikkeli [The New Methodology]( http://martinfowler.com/articles/newMethodology.html) käsittelee laajalti lineaarisen mallin ongelmia.
+
+### Royce ja vesiputousmalli
+
+Paradoksaalista kyllä vesiputousmallin isänä pidetty Royce ei suosittele artikkelissaan suoraviivaisen lineaarisen mallin käyttöä. Royce kyllä esittelee lineaarisen vesiputousmallin artikkelin sivulla 2, mutta toteaa että se _ei sovellu_ monimutkaisten ohjelmistoprojektien tekotavaksi.
+
+Roycen mukaan sovelluksesta tulee ensin tehdä prototyyppi ja vasta siitä saatujen kokemusten valossa kannattaa suunnitella ja toteuttaa lopullinen ohjelmisto. Royce esitteleekin artikkelin loppupuolella mallin, missä ohjelmisto tehdään kahdessa iteraatiossa, kuva Roycen artikkelista
+
+![](https://raw.githubusercontent.com/mluukkai/ohjelmistotuotanto2019/master/images/1-3.png?token=AAD7XYZV2IWJZ3IYM3C6AQC5PYLP2)
+
+Vesiputousmalli tai ainakin Roycen nimeäminen vesiputousmallin isäksi on siis iso väärinymmärrys, onneksi Roycen artikkeli on nykyään helposti saatavilla internetissä.
+
+## Iteratiivinen ohjelmistokehitys
+
+## Ketterä ohjelmistokehitys
 
