@@ -235,27 +235,36 @@ Roycen mukaan sovelluksesta tulee ensin tehdä prototyyppi ja vasta siitä saa
 
 Vesiputousmalli tai ainakin Roycen nimeäminen vesiputousmallin isäksi on siis iso väärinymmärrys, onneksi Roycen artikkeli on nykyään helposti saatavilla internetissä.
 
-## Iteratiivinen ohjelmistokehitys
+## Iteratiivinen ja inkrementaalinen ohjelmistokehitys
 
 Lineaarisen mallin ongelmiin reagoinut _iteratiivinen_ tapa tehdä ohjelmistoja alkoi yleistyä 90-luvulla (mm. spiraalimalli, prototyyppimalli, Rational Unified process.
 
-Iteratiivisessa mallissa ohjelmistotuotanto jaetaan pienempiin aikaväleihin, eli iteraatioihin. Jokaisen iteraation aikana määritellään, suunnitellaan toteutetaan ja testataan ohjelmistoa, eli ohjelmisto kehittyy vähitellen. Asiakasta tavataan jokaisen iteraation välissä, asiakas näkee sen hetkisen version ohjelmasta ja pystyy vaikuttamaan seuraavien iteraatioiden kulkuun.
+Iteratiivisessa mallissa ohjelmistotuotanto jaetaan pienempiin aikaväleihin, eli iteraatioihin. Toisin kuin vesiputousmallin mukaisessa ohjelmistotuotannossa, iteratiivisesti edetessä ei pyritä tekemään heti alussa kattavaa määrittelyä ja suunnittelua.
 
-![](https://raw.githubusercontent.com/mluukkai/ohjelmistotuotanto2019/master/images/1-3.png?token=AAD7XYZV2IWJZ3IYM3C6AQC5PYLP2)
+Jokaisen iteraation aikana määritellään, suunnitellaan toteutetaan ja testataan ohjelmistoa, eli ohjelmisto kehittyy vähitellen. Ohjelma valmistuu siis pala palalta, tämän takia iteratiivisten menetelmien sanotaan olevan myös _inkrementaalisia_.
 
-Yhdysvaltojen puolustusministeriön vuonna 2000 julkaisema standardi (MIL-STD-498) alkaa suositella iteratiivista ohjelmistoprosessia:
+Asiakasta tavataan jokaisen iteraation välissä, asiakas näkee sen hetkisen version ohjelmasta ja pystyy vaikuttamaan seuraavien iteraatioiden kulkuun. Ohjelmiston iinkrementaalisen kasvamisen takia sen perusversio on mahdollista saada loppukäyttäjien käyttöönkin vielä kehitystyön kuluessa.
 
-"There are two approaches, evolutionary [iterative] and single step [waterfall], to full capability. An evolutionary approach is preferred. ... [In this] approach, the ultimate capability delivered to the user is divided into two or more blocks, with increasing increments of capability...software development shall follow an iterative spiral development process in which continually expanding software versions are based on learning from earlier development. It can also be done in phases”
-● Itseasiassa iteratiivinen ohjelmistokehitys on paljon vanhempi idea kun lineaarinen malli
-Esim. NASA:n ensimmäisen amerikkalaisen avaruuteen vieneen Project Mercuryn ohjelmisto kehitettiin iteratiivisesti (50-luvun lopussa)
-Avaruussukkuloiden ohjelmisto tehtiin vesiputousmallin valtakaudella 70-luvun lopussa, mutta sekin kehitetiin lopulta iteratiivista prosessia käyttäen (8 viikon iteraatioissa, 31 kuukauden aikana)
-Lisää aiheesta osoitteesta http://wiki.c2.com/?HistoryOfIterative
+![](https://raw.githubusercontent.com/mluukkai/ohjelmistotuotanto2019/master/images/1-4.png?token=AAD7XY7336DQD2D7CFRM3SC5PZP52)
+
+Vesiputousmallin "isä" Royce suositteli siis jo vuonna juurikin iteratiivista (kahden iteraation versiota) tapaa monimutkaisten ohjelmistojen kehitysmalliksi. Roycen ehdottama menetelmä ei oikeastaan ollut inkrementaalinen, sillä ensimmäisen iteraation aikana rakennettiin ainoastaan prototyyppi, jonka pohjalta varsinainen sovellus määriteltiin, suunniteltiin ja toteutetiin.
+
+Yhdysvaltojen puolustusministeriön vuonna 2000 julkaisema standardi (MIL-STD-498) alkoi suosittelemaan iteratiivista ohjelmistoprosessia:
+
+> There are two approaches, evolutionary (iterative) and single step (waterfall), to full capability. An evolutionary approach is preferred. ... In this approach, the ultimate capability delivered to the user is divided into two or more blocks, with increasing increments of capability...software development shall follow an iterative spiral development process in which continually expanding software versions are based on learning from earlier development. It can also be done in phases
+
+Itseasiassa iteratiivinen ohjelmistokehitys on paljon vanhempi idea kun lineaarinen malli. Esimerkiksi NASA:n ensimmäisen Amerikkalaisen avaruuteen vieneen Project Mercuryn ohjelmisto kehitettiin 50-luvun lopussa iteratiivisesti. Avaruussukkuloiden ohjelmisto tehtiin vesiputousmallin valtakaudella 70-luvun lopussa, mutta sekin kehitetiin lopulta iteratiivista prosessia käyttäen 8 viikon iteraatioissa, 31 kuukauden aikana. Lisää aiheesta Larmanin ja Basilin erinomaisessa artikkelissa [incremental and iterative development, a brief history](http://www.craiglarman.com/wiki/downloads/misc/history-of-iterative-larman-and-basili-ieee-computer.pdf)
 
 ## Ketterä ohjelmistokehitys
 
-1980- ja 1990-luvun prosessimalleissa korostettiin huolellista projektisuunnittelua, formaalia laadunvalvontaa, yksityiskohtaisia analyysi- ja suunnittelumenetelmiä ja täsmällistä, tarkasti ohjattua ohjelmistoprosessia
-Prosessimallit tukivat erityisesti laajojen, pitkäikäisten ohjelmistojen kehitystyötä, mutta pienten ja keskisuurten ohjelmistojen tekoon ne osoittautuivat usein turhan jäykiksi
-Perinteisissä prosessimalleissa (myös iteratiivisissa) on pyritty työtä tekevän yksilön merkityksen minimoimiseen
-Ajatuksena on ollut että yksilö on ”tehdastyöläinen”, joka voidaan helposti korvata toisella ja tällä ei ole ohjelmistoprosessin etenemiselle mitään vaikutusta
+1980- ja 1990-luvun prosessimalleissa korostettiin huolellista projektisuunnittelua, formaalia laadunvalvontaa, yksityiskohtaisia analyysi- ja suunnittelumenetelmiä ja täsmällistä, tarkasti ohjattua ohjelmistoprosessia. Prosessimallit tukivat erityisesti laajojen, pitkäikäisten ohjelmistojen kehitystyötä, mutta pienten ja keskisuurten ohjelmistojen tekoon ne osoittautuivat usein turhan jäykiksi.
 
-Ristiriidan seurauksena syntyi joukko ketteriä prosessimalleja (agile process models), jotka korostivat itse ohjelmistoa sekä ohjelmiston asiakkaan ja toteuttajien merkitystä yksityiskohtaisen suunnittelun ja dokumentaation sijaan
+Perinteisissä prosessimalleissa (myös iteratiivisissa) on pyritty työtä tekevän yksilön merkityksen minimoimiseen. Ajatuksena on ollut että yksilö on "tehdastyöläinen", joka voidaan helposti korvata toisella ja tällä ei ole ohjelmistoprosessin etenemiselle mitään vaikutusta.
+
+Ristiriidan seurauksena syntyi joukko ketteriä menetelmiä (agile methods), jotka korostivat itse ohjelmistoa sekä ohjelmiston asiakkaan ja toteuttajien merkitystä yksityiskohtaisen suunnittelun ja dokumentaation sijaan.
+
+### Ketterä manifesto
+
+### Ketterät periaatteet
+
+## Lean
