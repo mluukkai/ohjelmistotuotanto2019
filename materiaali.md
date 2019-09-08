@@ -140,7 +140,7 @@ Edellisessä luvussa mainituttujen ohjelmistotuotannon osa-alueeiden
 
 voidaan ajatella muodostavan _vaiheet_, joiden kautta ohjelmisto kehityksensä aikana etenee. Joskus näistä vaiheista käytetään nimitystä ohjelmiston _elinkaari_ (software lifecycle). Aikojen saatossa on ollut erilaisia tapoja jäsentää ohjelmistojen kehittäminen elinkaaren suhteen, eli se miten ja kenen toimesta vaiheet on suoritettu, on vaihdellut.
 
-## code'n'fix
+## Code'n'fix
 
 Tietokoneiden historian alkuaikoina laitteet maksoivat paljon, ohjelmistot olivat laitteistoihin nähden "triviaaleja". Ohjelmointi tapahtui alussa kaapeleita yhdistelemällä ja hieman myöhemmin konekielellä. Sovellusten käyttäjät, kuten aseteollisuudessa olleet fyysikot jotka laskivat ammusten lentoratoja, yleensä ohjelmoivat itse tarvitsemansa sovellukset. 
 
@@ -175,7 +175,11 @@ Termi _software engineering_ eli ohjelmistotuotanto määritellään ensimma
      
 Syntyy idea siitä, että _code'n'fix_ -mentaliteetin sijaan ohjelmistojen kehittämisen tulisi olla kuin mikä tahansa muu insinöörityö, eli kuten esim. siltojen rakentamisessa, tulee ensin rakennettava artefakti määritellä (requirements) tarkasti ja suunnitella (design) aukottomasti ja tämän jälkeen rakentaminen (construction) on melko suoraviivainen vaihe.
 
-## waterfal
+## Vesiputousmalli
+
+Winston Roycen vuonna 1970 julkaisema artikkeli [Management of the development of Large Software](http://www-scf.usc.edu/~csci201/lectures/Lecture11/royce1970.pdf) pohdiskelee isojen ohjelmistojen kehittämiseen liittyvää problematiikkaa. Artikkelin sivulla 2 Royce esittelee yksinkertaisen prosessimallin (eli ohjeiston työvaiheiden jaksottamiseen), jossa ohjelmiston elinkaaren vaiheet suoritetaan lineaarisesti peräkkäin
+
+![](https://raw.githubusercontent.com/mluukkai/ohjelmistotuotanto2019/master/images/l-1.png)
 
 ## iterative
 
