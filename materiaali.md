@@ -128,4 +128,56 @@ Ohjelmistotuotanto pitää siis allaan suuren määrän hyvin erilaisiakin asioi
 
 Aloittelevalle ohjelmistoalan opiskelijalle onkin tässä vaiheessa oleellisempaa saada kokonaiskuva ohjlemistotuotannon kentästä ja sen jälkeen soveltaa ja reflektoida oppimaansa käytännön ohjelmistotyössä, esim. Tietojenkäsittelytieteen osaston opintojaksolla [ohjelmistotuotantoprojekti](https://github.com/HY-TKTL/TKT20007-Ohjelmistotuotantoprojekti) tai oikeassa työelämässä. Aihepiiriä syventävät kurssit ovat todennäköisesti huomattavasti mielekkäämpää suorittaa siinä vaiheessa kun opiskelija omaa jo jonkinlaisen määrän alan käytännön kokemusta.
 
-# ohjelmistoprosessit -- Ohjelmiston elinkaari
+# Ohjelmiston elinkaari
+
+Edellisessä luvussa mainituttujen ohjelmistotuotannon osa-alueeiden
+
+- Software requirements, vaatimusten määrittely
+- Software design, suunnittelu
+- Software construction, ohjelmiston toteutus
+- Software testing, testaus
+- Software maintenance, ylläpito 
+
+voidaan ajatella muodostavan _vaiheet_, joiden kautta ohjelmisto kehityksensä aikana etenee. Joskus näistä vaiheista käytetään nimitystä ohjelmiston _elinkaari_ (software lifecycle). Aikojen saatossa on ollut erilaisia tapoja jäsentää ohjelmistojen kehittäminen elinkaaren suhteen, eli se miten ja kenen toimesta vaiheet on suoritettu, on vaihdellut.
+
+## code'n'fix
+
+Tietokoneiden historian alkuaikoina laitteet maksoivat paljon, ohjelmistot olivat laitteistoihin nähden "triviaaleja". Ohjelmointi tapahtui alussa kaapeleita yhdistelemällä ja hieman myöhemmin konekielellä. Sovellusten käyttäjät, kuten aseteollisuudessa olleet fyysikot jotka laskivat ammusten lentoratoja, yleensä ohjelmoivat itse tarvitsemansa sovellukset. 
+
+Sovelluskehitys tapahtui pitkälti _code and fix_ -mentaliteetilla, eli koodattiin ja katsottiin toimiko softa. Ohjelmistojen yksinkertaisuuden ja suhteellisne halpuuden takia se ei muodostanut minkäänlaista pullonkaulaa.
+
+Vähitellen ohjelmistot alkavat kasvaa. Kehitettiin korkeamman tason ohjelmointikieliä kuten Fortran, Cobol, Algol ja ohjelmistojen käyttöalue alkoi laajeta koskemaan muitakin elämänalueita kuin sotateollisuutta. Ohjelmistoja alettiin tekemään loppukäyttäjille, jotka eivät enää olleet ohjelmistoalan ammattilaisia, eli kuilu ohjelmiston tekijöiden ja loppukäyttäjien välillä alkoi kasvaa.
+
+Ohjelmistoala alkoi joutua ongelmiin, [wikipedia](https://en.wikipedia.org/wiki/Software_crisis) mukaan ongelmia olivat
+
+- budjetit ylittyivät ja projektit myöhästyivät aikatauluista
+- ohjelmistot olivat tehottomia, niiden laatu oli huono ja ne eivät toimineet käyttäjien tarpeiden mukaan
+- koodin ylläpito ja laajentaminen oli vaikeaa
+- ja jopa usein kävi niin, että ohjelmistoja ei hyvistä aikista huolimatta saatu ollenkaan toimitettua
+
+## Ohjelmistokriisi
+
+Kesällä 1968 NATO:n järjestämässä konferenssissa julkistettiinkin että maailmassa on _software crisis_, eli ohjelmistokriisi.
+
+Termillä viittaa siihen miten vaikeaa on toteuttaa käyttökelpoisia, oikein toimivia, tehokkaita ja laajennettavissa olevia ohjelmistoja käytössä olevien resurssien puitteissa.
+
+Eräs tietojenkäsittelyn pioneereista, Turing-palkittu Edsger Dijkstra ilmaisi asian seuraavasti vuonna 1972 pitämässään [esitelmäsä](https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html) 
+
+> The major cause of the software crisis is that the machines have become several orders of magnitude more powerful! To put it quite bluntly: as long as there were no machines, programming was no problem at all; when we had a few weak computers, programming became a mild problem, and now we have gigantic computers, programming has become an equally gigantic problem.
+
+Eli kun tietokoneita ei ollut, ohjelmointi ei muodotanut ongelmaa. Ensimmäistet tietokoneet olivat laskentateholtaan pieniä, ja ne aiheuttivat ainoastaan pieniä ongelmia ohjelmointiin. Massiivisen tehokkaiden tietokoneiden myötä myös ohjelmoinnista on tullut massiivinen ongelma...
+
+## Ohjelmistokehitys insinööritieteenä: software engineerin
+
+Termi _software engineering_ eli ohjelmistotuotanto määritellään ensimmäistä kertaa 1968:
+
+> The establishment and use of sound engineering principles in order to obtain economically software that is reliable and works efficiently on real machines
+     
+Syntyy idea siitä, että _code'n'fix_ -mentaliteetin sijaan ohjelmistojen kehittämisen tulisi olla kuin mikä tahansa muu insinöörityö, eli kuten esim. siltojen rakentamisessa, tulee ensin rakennettava artefakti määritellä (requirements) tarkasti ja suunnitella (design) aukottomasti ja tämän jälkeen rakentaminen (construction) on melko suoraviivainen vaihe.
+
+## waterfal
+
+## iterative
+
+## agile
+
