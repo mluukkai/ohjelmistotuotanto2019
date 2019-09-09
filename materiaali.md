@@ -265,6 +265,60 @@ Ristiriidan seurauksena syntyi joukko ketteriä menetelmiä (agile methods), jo
 
 ### Ketterä manifesto
 
+17 ketterien menetelmien pioneeria kerääntyi helmikuussa 2001 kokoukseen, jonka tuloksena oli [Agile manifesto](http://agilemanifesto.org/), eli näkemys siitä mitä ketterällä ohjelmistokehityksellä tarkoitetaan.
+
+Manifesto on käänneetty monelle kielelle, myös [suomeksi](https://agilemanifesto.org/iso/fi/manifesto.html), mutta tarkastellaan sen englanninkielistä versiota:
+
+We are uncovering better ways of developing software by doing it and helping others do it. Through this work we have come to value:
+
+- _Individuals and interactions_ over processes and tools 
+- _Working software_ over comprehensive documentation 
+- _Customer collaboration_ over contract negotiation 
+- _Responding to change_ over following a plan
+
+That is, while there is value in the items on the right, we value the items on the left more.
+
+Manifesti siis koostuu neljstä vastakkainasettelun sisältäväst kohdasta, jotka ilmaisevat mikä on ketterien menetelmien näkemyksen mukaan oleellisinta ohjelmistokehityksessä. Ensimmäinen kohta sanoo, että erilaiset työkalut ja prosessit voivat olla tärkeää, mutta _vielä tärkeämpää_ ovat ohjelmiston kehittäjät, käyttäjät, tilaajat ja heidän välinen interaktio. Toinen kohta taas ei kiellä dokumentaation tärkeyttä, mutta sanoo että lopulta tärkeintä on toimiva ohjelmisto. Ketterä manifesti ei siis kiellä tai pidä arvottomana "vanhan maailman" tärkeänä pitämiä asioita kuten _suunnitelman noudattamista_, mutta osoittaa, että niitäkin oleellisimpia seikkoja on, kuten _muutokseen reagoiminen_.
+
+Manifestin [laatijoiden joukko](https://agilemanifesto.org/authors.html) koostuu monesta tutusta ja vaikutusvaltaisesta nimestä, kuten Kent Beck, Robert Martin, Ken Schwaber, Martin Fowler ja Alistair Coburn, jotka ovat vaikuttaneet merkittävästi nykyiseen vallitsevaan ohjelmistokehityksen tapaan.
+
 ### Ketterät periaatteet
 
-## Lean
+Manifesti sisältää yllä olevan lisäksi 12 ketterää periaatetta. Käydään ne nyt läpi ja pohdiskellaan hieman niiden taustalla olevia ajatuksia.
+
+Our highest priority is to satisfy the customer through early and continuous delivery of valuable software
+
+Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale 
+
+Working software is the primary measure of progress.
+
+Business people and developers must work together daily throughout the project
+
+The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.
+
+Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage
+
+Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.
+
+The best architectures, requirements, and designs emerge from self-organizing teams.
+
+At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly
+
+Simplicity – the art of maximizing the amount of work not done – is essential.
+
+Continuous attention to technical excellence and good design enhances agility.
+
+Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
+
+## Ketterät prosessit ja Lean
+
+Ketterät menetelmät on sateenvarjotermi useille ketterille prosessimalleille
+Näistä tunnetuimpia ovat:
+Extreme programming eli XP
+Scrum
+Molempiin, erityisesti Scrumiin tutustutaan kurssin aikana
+Ketterä ohjelmistotuotanto on ottanut vaikutteita myös Toyota production systemin taustalla olevasta lean-ajattelusta
+Viime vuosina syntynyt ”leaneja menetelmiä”, mm
+Kanban
+Scrumban
+Myös lean kuuluu kurssin aihepiiriin
