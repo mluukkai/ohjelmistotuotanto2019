@@ -284,41 +284,56 @@ Manifestin [laatijoiden joukko](https://agilemanifesto.org/authors.html) koostuu
 
 ### Ketterät periaatteet
 
-Manifesti sisältää yllä olevan lisäksi 12 ketterää periaatetta. Käydään ne nyt läpi ja pohdiskellaan hieman niiden taustalla olevia ajatuksia.
+Manifesti sisältää yllä olevan lisäksi 12 ketterää periaatetta. Käydään periaatteet nyt läpi ja pohdiskellaan hieman niiden taustalla olevia ajatuksia.
 
-Our highest priority is to satisfy the customer through early and continuous delivery of valuable software
+Aloitetan kolmesta 
 
-Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale 
+_Our highest priority is to satisfy the customer through early and continuous delivery of valuable software._
 
-Working software is the primary measure of progress.
+_Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale._
 
-Business people and developers must work together daily throughout the project
+_Working software is the primary measure of progress._
 
-The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.
+Oleellisinta kaikesta ja mittarina projektin edistymiselle on toimintakelpoisen, arvoa tuottavan ohjelmiston toimittaminen asiakkaalle. Toisin kuin vesiputousmallissa, aloitetaan valmiiden ohjelmistofeatureiden toimittaminen jo aikaisessa vaiheessa ja sitä tehdään toistuvasti tiheähkösti iteroiden. Manifesti puhuu _from couple of weeks to couple of months_, nykyään ideaali on vieläkin tiheämpi toimitusväli, jopa useiden sovelluksen versioiden julkaisu päivässä. 
 
-Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage
+_Business people and developers must work together daily throughout the project._
 
-Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.
+_The most efficient and effective method of conveying information to and within a development team is face-to-face conversation._
 
-The best architectures, requirements, and designs emerge from self-organizing teams.
+_Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage._
 
-At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly
+Vesiputousmallissa fundamentaalina periaattena oli se, että ohjelmiston valmistaminen alkaa kattavalla vaatimusmäärittelyllä, jonka aikana asiakkaan vaatimukset selvitetään, dokumentoidan huolellisesti ja "jäädytetään", eli vaatimuksiin ei sen koommin edes sallita muutoksia. Asiakas on seuraavan kerran mukana kehitystyössä ehkä vasta lopussa tekemässä hyväksymistestausta.
 
-Simplicity – the art of maximizing the amount of work not done – is essential.
+Ketterän manifestin periaatteet ovat täysin päinvastaiset. Asiakkaiden ja sovelluskehittäjien oletetaan toimivan koko ohejlmiston kehityskaaren tiiviissä, jopa päivittäisessä yhteistyössä. Kommunikointi pyritään hoitamaan raskaan dokumentaation sijaan jopa keskustellen. Myös suhtautuminen vaatimusmäärittelyyn on mennyt päälaelleen. Asiakas saa vaihtaa vaatimuksiaan kesken ohjelmistokehityksen, ja siihen jopa rohkaistaan, jos muuttuneen vaatimusmäärittelyn avulla asiakas pystyy saamaan itselleen etua aikaan. 
 
-Continuous attention to technical excellence and good design enhances agility.
+> Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.
 
-Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
+> The best architectures, requirements, and designs emerge from self-organizing teams.
 
-## Ketterät prosessit ja Lean
+Ketterät periaatteet luottavat siihen, että kun ohjelmistokehittäjille annetaan sopiva työskentely-ympäristö, he tekevät parhaansa toimittaakseen asiakkaalle arvokkaan sovelluksen ilman tarvetta ulkoiselle kontrolloinnille. Ei ole tarvetta myöskään erillisille vaatimuksia keräävän analyytikon tai suunnittelusta huolehtivan ohjelmistoarkkitehdin rooleille, softatiimit osaavat toimia parhaiten itseorganisoitumalla, eli päättämällä itse toimintamenetelmistään.
 
-Ketterät menetelmät on sateenvarjotermi useille ketterille prosessimalleille
-Näistä tunnetuimpia ovat:
-Extreme programming eli XP
-Scrum
-Molempiin, erityisesti Scrumiin tutustutaan kurssin aikana
-Ketterä ohjelmistotuotanto on ottanut vaikutteita myös Toyota production systemin taustalla olevasta lean-ajattelusta
-Viime vuosina syntynyt ”leaneja menetelmiä”, mm
-Kanban
-Scrumban
-Myös lean kuuluu kurssin aihepiiriin
+> At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
+
+Aiemmin mainittu periaate _Welcome changing requirements..._ siis kuvailee, että ketterä mahdollistaa ja suorastaan kannustaa tuotteen kehityssuunnan muuttamisen uusien tarpeiden ilmetessä. Vastaavasti kehitystiimin odotetaan tarkastelevan omaa toimintaansa ja muokkaamaan sitä jatkuvasti parempaan suuntaan.
+
+> Simplicity – the art of maximizing the amount of work not done – is essential.
+
+Vesiputousmalli ja muut vanhemmat kehitysmenetelmät antoivat suuren painoarvon dokumentaatiolle ja erilaisille "prosessin määräämille" raporteille, joihin käytettiin paljon aikaa ja vaivaa, ilman että ne olisivat kuitenkaan kovin paljoa edistäneet itse tuotteen valmistumista. Ketteräissä menetelmissä ideana on eliminoida mahdollisimman pitkälle kaikki mikä ei ole primääristen tavoitteiden kannalta oleellista (_Working software is the primary measure of progress_). Myös ohjelmistokehittäjllä on pyrkimys rakentaa ohjelmistoon tulevaisuuden varalta kaikenlaista ekstraa, myös tälläiseen tulisi ketterässä hengessä suhtautua kriittisesti. 
+
+Viimeiset kaksi periaatetta ovat ne, jotka tahtovat useimmiten unohtua:
+
+> Continuous attention to technical excellence and good design enhances agility.
+
+> Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
+
+Ketteryys edellyttää että tiimi pystyy muuttamaan tarvittaessa sovelluskehityksen suuntaa uusien tarpeiden noustessa esiin. Tämä taas edellyttää, että tiimin on ylläpidettävä ohjelmiston laatua riittävällä tasolla, jos nimittäin sovellus on sisäiseltä rakenteeltaan huono purkkaviritys, on siitä koko ajan vaikeampi laajentaa uusilla toiminnallisuuksilla, erityisesti sellaisilla, joiden tarvetta ei aiemmin ehkä osattu ennakoida. Eli jos laatuun ei kiinnitetä riittävää huomiota, ketteryys menetetään, ja sovelluksen kehitys muuttuu erittäin hitaaksi.
+
+## Ketterät menetelmät ja Lean
+
+Ketterät menetelmät on sateenvarjotermi useille ketterille menetelmille. 2000 luvun alkupuolella [Extreme programming](http://www.extremeprogramming.org/) eli XP oli ketteristä menetelmistä suosituin. Nykyään harva enää soveltaa "oppikirjamaista" XP:tä, mutta runsaasti sen käytänteistä on jäänyt elämään ja omaksuttu monien softatiimien työkalupakkiin. Tutustumme moniin XP:n käytänteisiin kurssin aikana.
+
+XP:ltä valta-aseman otti pikkuhijaa [Scrum](https://www.scrum.org/), joka lienee tällä hetkellä maailman eniten käytetty ohjelmistokehitysmenetelmä. Tutustumme Scrumiin tarakemmin seuraavassa luvussa.
+
+Ketterä ohjelmistotuotanto on ottanut runsaasti vaikutteita [Toyota production systemin](https://global.toyota/en/company/vision-and-philosophy/production-system/) taustalla olevasta _lean_-ajattelusta. Viime vuosina termi lean on alkanut näkyä yhä tiiviimmin termin agile rinnalla tai sijasta ohjelmistokehityksestä puhuttaessa. Leanista peräisin olevaa [kanbania](https://fi.wikipedia.org/wiki/Kanban) on ruvettu soveltamaan runsaasti ohjelmistokehitykseen, usein se täydentää jotain ketterää menetelmää kuten Scrumia. Kanbanin ja Scrumin yhdistelmä kulkeekin nimellä [Scrumban](https://www.amazon.com/exec/obidos/ASIN/0321150783/poppendieckco-20). Palaamme Leaniin tarkemin kurssin osassa 8.
+
+Ketterät menetelmät on alun perin suunniteltu yksittäisen, pienehköjen ohjelmistotiimien hallintaan. Viime aikoina ketterille menetelmille on hahmoteltu useitakin laajennuksia mm. [SaFe](https://www.scaledagileframework.com/) ja [Less](https://less.works/), joiden avulla on mahdollista hallinnoida useista ohjelmistotiimeistä koostuvia kokonaisuuksia. Ketterien periaatteiden lisäksi nämä laajemman skaalan kehitysmenetelmän nojaavat voimakkaasti leanin tarjoamiin periaatteisiin. Palaamme asiaan kurssin yhdekäsnnessä osassa.
